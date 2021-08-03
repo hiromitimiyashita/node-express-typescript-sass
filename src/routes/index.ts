@@ -1,11 +1,10 @@
 import { Router, Request, Response } from 'express';
 
+import * as PageController from '../controllers/PageController'
+
 const router = Router();
 
-router.get('/', (req: Request, res: Response)=>{
-    res.render('pages/home', {nome: 'Alex'});
-});
-
-router.get('/contato', ()=>{});
+router.get('/', PageController.index);
+router.get('/sobre', PageController.sobre);
 
 export default router;
