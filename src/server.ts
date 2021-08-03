@@ -19,6 +19,4 @@ server.use((req: Request, res: Response) => {
     res.status(404).send('Página não encontrada!');
 });
 
-const { MYSQL_DB, MYSQL_NAME, MYSQL_PASSWORD, MYSQL_PORT } = process.env;
-
-server.listen(MYSQL_PORT); 
+server.listen(process.env.PORT); 

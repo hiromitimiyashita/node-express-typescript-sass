@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const  { MYSQL_DB, MYSQL_USER, MYSQL_PASSWORD, MYSQL_PORT } = process.env;
+const { MYSQL_DB, MYSQL_USER, MYSQL_PASSWORD, MYSQL_PORT } = process.env;
 
 export const sequelize = new Sequelize(
     MYSQL_DB as string,

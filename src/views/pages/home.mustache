@@ -7,8 +7,12 @@
 
 <p>Seja Bem vindo, {{ user.myName }}</p>
 
-
-
+<h2>Banco de dados MySql</h2>
+<ul>
+    {{#list}}
+        <li>{{ id }} - {{ name }} - {{ age }} anos</li>
+    {{/list}}
+</ul>
 
 
 {{>partials/footer}}
